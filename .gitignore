@@ -1,0 +1,8 @@
+*.bak
+tags
+data/*.txt
+data/backup/
+data/swap/
+data/undodir/
+template/
+bundle/vimcdoc/

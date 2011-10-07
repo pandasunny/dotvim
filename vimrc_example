@@ -1,0 +1,12 @@
+" Envionment variables settings {{{
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let $VIMPATH=$HOME
+let $VIMRC='.vimrc'
+let $VIMFILES=$HOME.'/.vim'
+let $WORKSPACE='~/workspace'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" }}}
+source $VIMFILES/vimrc
+autocmd! bufwritepost $VIMRC source $VIMPATH/$VIMRC
+" Fast edit the vimrc with <leader>erc
+map <leader>erc :e! $VIMPATH/$VIMRC<cr>
