@@ -40,6 +40,10 @@ Find the vim plugins in https://github.com/vim-scripts
     cd ~/.vim/bundle/mru
     git pull
 
+##Upgrading all bundled plugins
+
+    git submodule foreach git pull origin master
+
 ##Uninstall plugins as submodules
 
 #####remove the plugins path
